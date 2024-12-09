@@ -22,7 +22,7 @@
     //PROCESSAMENTO
 
     for (let aluno = 1; aluno <= qntVotantes; aluno++) {
-        let voto = Number(prompt(`Em qual quantidato você deseja votar? Digite 1 para ${candidato1}, 2 para ${candidato2} ou 3 para ${candidato3}`));
+        let voto = Number(prompt(`Em qual quantidato você deseja votar? Digite 1 para ${candidatoUm}, 2 para ${candidatoDois} ou 3 para ${candidatoTres}`));
         
         if (voto === 1) {
             votosUm++; 
@@ -41,8 +41,8 @@
 
     //SAÍDA
     document.write(`Resultado da votação: <br>
-    ${candidatoUm}: ${votosUm} votos ${percentualUm.toFixed(2)}%; <br>
-    ${candidatoDois}: ${votosDois} votos ${percentualDois.toFixed(2)}%; <br>
-    ${candidatoTres}: ${votosTres} votos ${percentualTres.toFixed(2)}%.`);
+    ${candidatoUm}: ${votosUm} votos ${percentualUm.toFixed(0)}%; <br>
+    ${candidatoDois}: ${votosDois} votos ${percentualDois.toFixed(0)}%; <br>
+    ${candidatoTres}: ${votosTres} votos ${percentualTres.toFixed(0)}%.`);
     
 </script>

@@ -12,13 +12,19 @@
     //ENTRADA
 
     let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
-    let letrasRepetidas = [];
-    let letrasVistas = [];
+    let letrasMinusculas = [];
     
     //PROCESSAMENTO
 
-    for (let)
+    for (let contador = 0; contador < listaDeLetras.length; contador++){
+        let letra = listaDeLetras[contador].toLocaleLowerCase();
+        if (letrasMinusculas.includes(letra) == false){
+            letrasMinusculas.push(letra);
+        }
+    }
     
     //SAÍDA
+
+    document.write(``)
 
 </script>

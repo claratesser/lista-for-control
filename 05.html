@@ -8,7 +8,6 @@
     //ENTRADA
 
     const numeroInformado = Number(prompt("Informe um numero"));
-    let numerosprimos = [];
     let primo;
     let divisores = 0;
 
@@ -17,16 +16,16 @@
     if (numeroInformado <= 1){
         primo = `${numeroInformado} não é um número primo`
     } else{
-        for (let numero = 1; numero <= numeroInformado; numero++ ){
+        for (let numero = 2; numero < numeroInformado; numero++ ){
             if (numeroInformado % numero === 0){
                 divisores++;
             }
         }
     }
-    if (divisores > 2){
-        primo = `${numeroInformado} não é um número primo`
-    } else {
+    if (divisores == 0){
         primo = `${numeroInformado} é um número primo`
+    } else {
+        primo = `${numeroInformado} não é um número primo`
     }
 
     //SAÍDA
